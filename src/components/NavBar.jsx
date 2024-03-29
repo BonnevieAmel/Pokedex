@@ -1,11 +1,11 @@
 
- const NavBar = ({ pokemonList, pokemonIndex, setPokemonIndex}) => {
+ const NavBar = ({ pokemonList, setPokemonIndex}) => {
     
     return (
       <div>
           {pokemonList.map((pokemon, index) => (
 
-            <button key={pokemon.name + index} onClick={() => setPokemonIndex(index)}>
+            <button key={pokemon.name} onClick={() => setPokemonIndex(index)}>
                 {pokemon.name}
               </button>
           ))}
@@ -16,3 +16,4 @@
   };
   
   export default NavBar;
+  
